@@ -1,0 +1,24 @@
+.menu-btn {
+  display: none;
+}
+
+ @media (max-width: 768px) { /*Applies styles for screens ≤768px (tablet & mobile) */
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 56px;
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 20px;
+    background: none;
+    border: none;
+  }
+}
