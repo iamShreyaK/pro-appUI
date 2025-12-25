@@ -22,3 +22,11 @@ th, td {
   border-bottom: 1px solid #e5e7eb;
   text-align: left;
 }
+.modal{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(rgb(206, 204, 204));
+  justify-content: center;
+  align-items: center;
+}

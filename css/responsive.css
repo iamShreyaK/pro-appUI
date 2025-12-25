@@ -1,8 +1,13 @@
-.menu-btn {
+.menu-btn{
   display: none;
 }
-
- @media (max-width: 768px) { /*Applies styles for screens ≤768px (tablet & mobile) */
+/*media query for smaller screens show menu bar */
+@media (max-width: 768px) {
+  .menu-btn{
+    display: block;
+    cursor: pointer;
+    border: 2px;
+  }
   .sidebar {
     position: fixed;
     left: -100%;
@@ -13,12 +18,5 @@
 
   .sidebar.open {
     left: 0;
-  }
-
-  .menu-btn {
-    display: block;
-    font-size: 20px;
-    background: none;
-    border: none;
   }
 }
