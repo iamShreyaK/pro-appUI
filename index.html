@@ -41,16 +41,17 @@
     </section>
 
     <section class="table-section">
-      <h2>User List</h2>
       <table id="userTable">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Status</th>
+            <th data-key="name">Name</th>
+            <th data-key="role">Role</th>
+            <th data-key="status">Status</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <!-- dynamically rows added here -->
+        </tbody>
       </table>
     </section>
   </main>
@@ -58,12 +59,13 @@
 <button onclick="openModal()">Open Modal</button>
 <div class="modal" id="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">X</span>
+    
     <h3>ProApp</h3>
     <p>This simulates enterprise AI behavior. Your new AI agent.</p>
+    <span class="close" onclick="closeModal()">X</span>
   </div>
 </div>
-<script src="js/data.js"></script>
 <script src="js/app.js"></script>
+<script src="js/data.js"></script>
 </body>
 </html>

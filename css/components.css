@@ -22,6 +22,23 @@ th, td {
   border-bottom: 1px solid #e5e7eb;
   text-align: left;
 }
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.status-dot {
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
+}
+.status-dot.Active {
+  background-color: green;
+}
+
+.status-dot.Inactive {
+  background-color: red;
+}
 .modal{
   display: none;
   position: fixed;
@@ -29,4 +46,22 @@ th, td {
   background-color: rgba(rgb(206, 204, 204));
   justify-content: center;
   align-items: center;
+}
+.modal-content{
+  background: var(--white);
+  padding: 10px;
+  border: 5px solid var(--muted);
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.close{
+  margin-left: 340px;;
+}
+button{
+  background-color: rgb(79, 80, 81);
+  color: var(--white);
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 20px;
 }
